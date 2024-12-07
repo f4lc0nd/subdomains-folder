@@ -32,3 +32,4 @@ testwhm.aui.ma
 www.apply.aui.ma
 www.aui.ma
 www.mun.aui.ma
+admin.aui.ma
