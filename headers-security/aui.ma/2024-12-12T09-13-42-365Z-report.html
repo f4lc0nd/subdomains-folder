@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Headers Analysis Report - https://aui.ma</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            color: #1a1a1a;
+        }
+        h1, h2, h3 {
+            color: #2d3748;
+        }
+        .header {
+            margin-bottom: 30px;
+        }
+        pre {
+            background-color: #f7f7f7;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            color: #1a1a1a;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ef4444;
+        }
+        .issue {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .critical { background: #fee2e2; }
+        .warning { background: #fef3c7; }
+        .info { background: #dbeafe; }
+        .section {
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Security Headers Analysis Report</h1>
+            <p>Generated: 2024-12-12T09:13:43.033Z</p>
+            <p>Target URL: https://aui.ma</p>
+            <div class="score">Security Score: 0%</div>
+        </div>
+
+        <div class="section">
+            <h2>Issues Found</h2>
+            
+                <div class="issue warning">
+                    <h3>Strict-Transport-Security (warning)</h3>
+                    <p><strong>Message:</strong> HSTS should include subdomains for better security</p>
+                    <p><strong>Recommendation:</strong> Add 'includeSubDomains' directive to HSTS</p>
+                </div>
+            
+                <div class="issue critical">
+                    <h3>X-Frame-Options (critical)</h3>
+                    <p><strong>Message:</strong> X-Frame-Options header is missing. This header helps prevent clickjacking attacks.</p>
+                    <p><strong>Recommendation:</strong> Add the X-Frame-Options header with value: DENY</p>
+                </div>
+            
+                <div class="issue critical">
+                    <h3>X-Content-Type-Options (critical)</h3>
+                    <p><strong>Message:</strong> X-Content-Type-Options header is missing. This header prevents MIME type sniffing.</p>
+                    <p><strong>Recommendation:</strong> Add the X-Content-Type-Options header with value: nosniff</p>
+                </div>
+            
+                <div class="issue warning">
+                    <h3>Permissions-Policy (warning)</h3>
+                    <p><strong>Message:</strong> Permissions-Policy header is missing. This header helps control which features and APIs can be used in the browser.</p>
+                    <p><strong>Recommendation:</strong> Add the Permissions-Policy header with value: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()</p>
+                </div>
+            
+                <div class="issue warning">
+                    <h3>Cross-Origin-Opener-Policy (warning)</h3>
+                    <p><strong>Message:</strong> COOP header is missing. This header prevents window opener attacks.</p>
+                    <p><strong>Recommendation:</strong> Add the Cross-Origin-Opener-Policy header with value: same-origin</p>
+                </div>
+            
+                <div class="issue warning">
+                    <h3>Cross-Origin-Resource-Policy (warning)</h3>
+                    <p><strong>Message:</strong> CORP header is missing. This header prevents cross-origin resource attacks.</p>
+                    <p><strong>Recommendation:</strong> Add the Cross-Origin-Resource-Policy header with value: same-origin</p>
+                </div>
+            
+                <div class="issue warning">
+                    <h3>Cross-Origin-Embedder-Policy (warning)</h3>
+                    <p><strong>Message:</strong> COEP header is missing. This header ensures all cross-origin resources are opted into CORS.</p>
+                    <p><strong>Recommendation:</strong> Add the Cross-Origin-Embedder-Policy header with value: require-corp</p>
+                </div>
+            
+                <div class="issue info">
+                    <h3>X-XSS-Protection (info)</h3>
+                    <p><strong>Message:</strong> X-XSS-Protection header is missing. While modern browsers don't rely on it, it provides additional protection for older browsers.</p>
+                    <p><strong>Recommendation:</strong> Add the X-XSS-Protection header with value: 1; mode=block</p>
+                </div>
+            
+                <div class="issue info">
+                    <h3>X-DNS-Prefetch-Control (info)</h3>
+                    <p><strong>Message:</strong> X-DNS-Prefetch-Control header is missing. This header controls DNS prefetching.</p>
+                    <p><strong>Recommendation:</strong> Add the X-DNS-Prefetch-Control header with value: off</p>
+                </div>
+            
+                <div class="issue info">
+                    <h3>Clear-Site-Data (info)</h3>
+                    <p><strong>Message:</strong> Clear-Site-Data header could be used for logout endpoints to clear sensitive data.</p>
+                    <p><strong>Recommendation:</strong> Add the Clear-Site-Data header with value: "cache","cookies","storage"</p>
+                </div>
+            
+        </div>
+
+        
+        <div class="section">
+            <h2>SSL/TLS Information</h2>
+            <ul>
+                <li>Valid: true</li>
+                <li>Issuer: Google Trust Services</li>
+                <li>Valid From: Nov 27 08:01:35 2024 GMT</li>
+                <li>Valid To: Feb 25 08:01:34 2025 GMT</li>
+                <li>Protocol: TLSv1.3</li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="section">
+            <h2>Cookie Analysis</h2>
+            
+                <div class="issue ">
+                    <h3>Cookie: __cf_bm</h3>
+                    <ul>
+                        <li>Secure: true</li>
+                        <li>HttpOnly: true</li>
+                        <li>SameSite: None</li>
+                        
+                    </ul>
+                </div>
+            
+                <div class="issue ">
+                    <h3>Cookie: _cfuvid</h3>
+                    <ul>
+                        <li>Secure: true</li>
+                        <li>HttpOnly: true</li>
+                        <li>SameSite: None</li>
+                        
+                    </ul>
+                </div>
+            
+        </div>
+        
+
+        <div class="section">
+            <h2>Raw Headers</h2>
+            <pre>{
+  "alt-svc": "h3=\":443\"; ma=86400",
+  "cache-control": "s-maxage=10800, max-age=0",
+  "cf-ray": "8f0c99974c03e5fb-IAD",
+  "connection": "keep-alive",
+  "content-encoding": "br",
+  "content-security-policy": "upgrade-insecure-requests",
+  "content-type": "text/html; charset=UTF-8",
+  "date": "Thu, 12 Dec 2024 09:13:42 GMT",
+  "edge-cache-tag": "CT-50531760350,CT-94688603868,CG-25719561,P-25719561,W-50414307538,W-50416806590,W-50417299435,W-51642184652,CW-50369804258,CW-50372820157,CW-50383452883,CW-50410379972,CW-50423925748,CW-50447750101,CW-50450702555,CW-50456375482,CW-50485002732,CW-50485805779,CW-50511583448,CW-50521210864,CW-50523027954,CW-50528747497,DB-4683732,DB-4683734,DB-4683993,DB-4687854,DB-4708067,DB-4708319,E-50369804265,E-50370663630,E-50370663632,E-50370664634,E-50370664656,E-50372179409,E-50372179419,E-50373824971,E-93163145976,E-95879836144,E-95880469479,MENU-50375988436,MENU-50414307538,MENU-50416806590,MENU-50417299435,MENU-51642184652,PGS-ALL,SW-0,B-70388867518,GC-50373198572,GC-50617656821,TS-50370664691",
+  "last-modified": "Thu, 12 Dec 2024 06:02:20 GMT",
+  "link": "</hs/hsstatic/content-cwv-embed/static-1.1293/embed.js>; rel=preload; as=script,</hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.17/bundles/project.js>; rel=preload; as=script,</hs/hsstatic/cos-i18n/static-1.53/bundles/project.js>; rel=preload; as=script",
+  "referrer-policy": "no-referrer-when-downgrade",
+  "server": "cloudflare",
+  "set-cookie": "_cfuvid=NLuW8UxEdTtmpApibmBqHH_dXvElU8rycJNvd9IDlJU-1733994822304-0.0.1.1-604800000; path=/; domain=.aui.ma; HttpOnly; Secure; SameSite=None",
+  "strict-transport-security": "max-age=31536000",
+  "transfer-encoding": "chunked",
+  "vary": "Accept-Encoding",
+  "x-hs-cache-config": "BrowserCache-5s-EdgeCache-180s",
+  "x-hs-cache-control": "s-maxage=10800, max-age=0",
+  "x-hs-cf-cache-status": "HIT",
+  "x-hs-content-id": "50531760350",
+  "x-hs-hub-id": "25719561",
+  "x-hs-prerendered": "Thu, 12 Dec 2024 06:02:20 GMT"
+}</pre>
+        </div>
+    </div>
+</body>
+</html>
