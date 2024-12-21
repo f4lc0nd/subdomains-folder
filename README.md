@@ -76,7 +76,7 @@ This repository is intended for educational purposes and to support ethical secu
 By using this repository, you agree to adhere to ethical standards and comply with the terms and conditions of the respective bug bounty platforms.
 
 ## License
-This repository is licensed under the MIT License.
+This repository is licensed under the GPL License.
 
 ## Contact
 For any questions or concerns, feel free to open an issue in the repository or reach out to us at sofalcons@outlook.com.
