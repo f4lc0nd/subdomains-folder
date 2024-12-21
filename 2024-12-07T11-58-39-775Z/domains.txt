@@ -1,6 +1,0 @@
-api.gocampus.aui.ma
-apply.aui.ma
-cms.gocampus.aui.ma
-crm.aui.ma
-dev.api.gosocial.aui.ma
-dev.gosocial.aui.ma
