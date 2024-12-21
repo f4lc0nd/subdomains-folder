@@ -1,4 +1,5 @@
 # BugBounty Subdomains - Public Database
+## Website: https://bugrecon.pro
 
 Welcome to the **BugBounty Subdomains** repository! This project is designed to help bug bounty hunters by providing a comprehensive and up-to-date collection of **subdomains** for legal bug bounty programs hosted on popular bug bounty platforms.
 
@@ -30,11 +31,11 @@ This repository includes subdomains from the following platforms (and growing!):
 1. **Clone the Repository**: Clone the repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/<username>/bugbounty-subdomains.git
+   git clone https://github.com/f4lc0nd/subdomains-folder.git
 View Subdomains: Inside the repository, navigate to the subdomains directory to view a categorized list of subdomains:
 
 ```bash
-cd bugbounty-subdomains/subdomains/
+cd bugbounty-subdomains/
 ```
 
 Use the Subdomains for Recon: You can use the subdomain lists directly for recon tools such as sublist3r, amass, or subfinder, or simply run manual checks against your targets.
