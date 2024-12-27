@@ -1,0 +1,9 @@
+# Subdomains for nextjs.org
+Last updated: 2024-12-27T16:52:03.479Z
+
+Total subdomains found: 4
+
+- nextjs.org
+- docs.nextjs.org
+- www.nextjs.org
+- xxx.nextjs.org
