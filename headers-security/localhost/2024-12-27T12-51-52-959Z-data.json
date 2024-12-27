@@ -1,0 +1,112 @@
+{
+  "score": 0,
+  "headers": {
+    "cache-control": "no-store, must-revalidate",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Fri, 27 Dec 2024 12:51:52 GMT",
+    "keep-alive": "timeout=5",
+    "link": "</_next/static/media/ad98735be220ace5-s.p.otf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/otf\", </_next/static/css/app/layout.css?v=1735303912297>; rel=preload; as=\"style\"",
+    "transfer-encoding": "chunked",
+    "vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding",
+    "x-clerk-auth-reason": "dev-browser-missing",
+    "x-clerk-auth-status": "signed-out",
+    "x-middleware-rewrite": "/",
+    "x-powered-by": "Next.js"
+  },
+  "issues": [
+    {
+      "header": "Strict-Transport-Security",
+      "severity": "critical",
+      "message": "HSTS header is missing. This header helps prevent MITM attacks.",
+      "recommendation": "Add the Strict-Transport-Security header with value: max-age=31536000; includeSubDomains; preload"
+    },
+    {
+      "header": "Content-Security-Policy",
+      "severity": "critical",
+      "message": "CSP header is missing. This header helps prevent XSS attacks.",
+      "recommendation": "Add the Content-Security-Policy header with value: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https:;"
+    },
+    {
+      "header": "X-Frame-Options",
+      "severity": "critical",
+      "message": "X-Frame-Options header is missing. This header helps prevent clickjacking attacks.",
+      "recommendation": "Add the X-Frame-Options header with value: DENY"
+    },
+    {
+      "header": "X-Content-Type-Options",
+      "severity": "critical",
+      "message": "X-Content-Type-Options header is missing. This header prevents MIME type sniffing.",
+      "recommendation": "Add the X-Content-Type-Options header with value: nosniff"
+    },
+    {
+      "header": "Referrer-Policy",
+      "severity": "warning",
+      "message": "Referrer-Policy header is missing. This header controls how much referrer information should be included with requests.",
+      "recommendation": "Add the Referrer-Policy header with value: strict-origin-when-cross-origin"
+    },
+    {
+      "header": "Permissions-Policy",
+      "severity": "warning",
+      "message": "Permissions-Policy header is missing. This header helps control which features and APIs can be used in the browser.",
+      "recommendation": "Add the Permissions-Policy header with value: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+    },
+    {
+      "header": "Cross-Origin-Opener-Policy",
+      "severity": "warning",
+      "message": "COOP header is missing. This header prevents window opener attacks.",
+      "recommendation": "Add the Cross-Origin-Opener-Policy header with value: same-origin"
+    },
+    {
+      "header": "Cross-Origin-Resource-Policy",
+      "severity": "warning",
+      "message": "CORP header is missing. This header prevents cross-origin resource attacks.",
+      "recommendation": "Add the Cross-Origin-Resource-Policy header with value: same-origin"
+    },
+    {
+      "header": "Cross-Origin-Embedder-Policy",
+      "severity": "warning",
+      "message": "COEP header is missing. This header ensures all cross-origin resources are opted into CORS.",
+      "recommendation": "Add the Cross-Origin-Embedder-Policy header with value: require-corp"
+    },
+    {
+      "header": "X-XSS-Protection",
+      "severity": "info",
+      "message": "X-XSS-Protection header is missing. While modern browsers don't rely on it, it provides additional protection for older browsers.",
+      "recommendation": "Add the X-XSS-Protection header with value: 1; mode=block"
+    },
+    {
+      "header": "X-DNS-Prefetch-Control",
+      "severity": "info",
+      "message": "X-DNS-Prefetch-Control header is missing. This header controls DNS prefetching.",
+      "recommendation": "Add the X-DNS-Prefetch-Control header with value: off"
+    },
+    {
+      "header": "Clear-Site-Data",
+      "severity": "info",
+      "message": "Clear-Site-Data header could be used for logout endpoints to clear sensitive data.",
+      "recommendation": "Add the Clear-Site-Data header with value: \"cache\",\"cookies\",\"storage\""
+    }
+  ],
+  "recommendations": [
+    "Implement Strict-Transport-Security header",
+    "Implement Content-Security-Policy header",
+    "Implement X-Frame-Options header",
+    "Implement X-Content-Type-Options header",
+    "Implement Referrer-Policy header",
+    "Implement Permissions-Policy header",
+    "Implement Cross-Origin-Opener-Policy header",
+    "Implement Cross-Origin-Resource-Policy header",
+    "Implement Cross-Origin-Embedder-Policy header",
+    "Implement X-XSS-Protection header",
+    "Implement X-DNS-Prefetch-Control header",
+    "Implement Clear-Site-Data header"
+  ],
+  "ssl": {
+    "valid": false,
+    "issues": [
+      "Failed to establish SSL connection"
+    ]
+  }
+}
